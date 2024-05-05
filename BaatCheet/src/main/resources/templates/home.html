@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/
+
+<title>Baatcheet</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+<link rel="stylesheet" day-th-href="@{'/css/output.css'}"/>
+<style>
+    .container{
+        margin: auto;
+        width: 50%;
+        padding: 30px; 
+        background: #a0ecec;
+        text-align: center;
+    }
+</style>
+</head>
+<body> 
+<div class="bg-gray-200 w-1/2 p-4 mx-auto mt-4 items-center justify-center">
+    <h1 class ="text-2 font-bold"data-th-text="${name}">
+        Welcome to hoe page</h1>
+    <h1 data-th-text="${name}">Home Page</h1>
+    <p>Youtube Channel: <span data-th-text ="${youtubeChannel}"</span> </p>
+    <p>Github Page: <span th:text ="${Github}"</span></p>
+
+        <a th:href="${githubrepo}">click here to open</a>
+    <p>Goku, the iconic protagonist of the Dragon Ball series, is a Saiyan warrior renowned for his unwavering determination, boundless strength, and indomitable spirit. From his humble beginnings as a child with a monkey tail, Goku has evolved into a legendary hero whose exploits span across galaxies. With his trademark spiky black hair and vibrant orange gi, Goku embarks on countless adventures, constantly seeking new challenges to test his limits and hone his martial arts skills. He embodies the values of courage, friendship, and perseverance, often putting the safety of others above his own. Through intense training and epic battles, Goku continually pushes the boundaries of his power</p>
+
+    <button class ="mt-5 px-5 py-2 rounded bg-blue-700 text-white hover:bg-blue-400  items-center">
+        <span>touch Me</span>
+    </button>
+</div>
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</html>
